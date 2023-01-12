@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>世界杯快报</title>
+    <link rel="icon" href="卡塔尔.webp">
+
+    <style>
+
+        body {
+            margin: 0;
+            padding: auto;
+            background-color: azure;
+        }
+
+        ul{
+            background-color: rgba(139, 177, 249, 0.979);
+        }
+
+        li{
+            display:inline-block;
+        }
+
+        li a{
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            padding: 14px 60px;
+        }
+
+        li a:hover{
+            background-color: rgb(61, 119, 227);
+        }
+
+        .t1{
+            border-collapse: collapse;
+            width: 85%;
+        }
+
+        .t1,.t1 th,.t1 td{
+            border: 1px solid darkgreen;
+            font-weight: lighter;
+        }
+
+        .t1 th,.t1 td{
+            padding: 10px;
+        }
+
+        .t1 td{
+            text-align: center;
+        }
+
+        .t1 tr:nth-child(even) {
+            background-color:#f5f5f5;
+        }
+        
+        .t1 tr:nth-child(1){
+            background-color: rgb(152, 201, 152);
+            color:darkgreen;
+        }
+
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: right;
+        }
+
+        .happy {
+            width: 800px;
+            margin: 10px auto;
+            border: solid 1px gray;
+            overflow: hidden;
+        }
+
+        .love {
+            width: 300px;
+            float: left;
+        }
+
+        .love img {
+            display: block;
+            width: 100%;
+        }
+
+        .you {
+            float: right;
+            width: 450px;
+        }
+
+        div.po1{
+            margin-top: 30px;
+            width:1307px;
+            height:auto;
+            clear: both;
+            box-shadow:0 10px 15px 0 #ccc,0 6px 8px 0 #ccc;
+        }
+
+        div.po2{
+            margin-top:50px;
+            width:1307px;
+            height: auto;
+            clear: both;
+            box-shadow:0 10px 15px 0 #ccc,0 6px 8px 0 #ccc;
+        }
+
+        div.po1:hover{
+            border:1px solid #0289ff;
+        }
+
+        div.po2:hover{
+            border:1px solid #0289ff;
+        }
+
+        div.po1 img{
+            width:650px;
+            height: 400px;
+        }
+
+        div.po2 img{
+            width:650px;
+            height: 400px; 
+        }
+
+        div.pi{
+            padding:15px;
+            text-align: center;
+            color:#0289ff;
+        }
+
+        ul.in1{
+            color:rgb(0, 110, 206);
+            background: none;
+            margin-top: 60px;
+            line-height: 35px;
+        }
+
+        .ul .in1 .li{
+            list-style-type: style disc;
+        }
+
+        td.ph1{
+            border:1px solid hwb(208 18% 0% / 0.803);
+        }
+
+        .gold {
+            color: gold;
+        }
+
+        .silver {
+            color: silver;
+        }
+
+        .coppery {
+            color: burlywood;
+        }
+
+        .yellowgreen {
+            color: yellowgreen;
+        }
+
+        h2 {
+            font-family: "楷体","楷体_GB2312";
+        }
+
+        h4 {
+            font-family: "楷体","楷体_GB2312";
+        }
+
+        #side-menu {
+            background-color: lightgrey;
+            display: block;
+            position: fixed;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            width: 250px;
+            transition: transform 200ms ease-in;
+            transform: translateX(calc(-24px + 100%));
+        }
+ 
+        #side-menu:hover {
+            transform: translateX(0px);
+        }
+ 
+        #side-menu-inner {
+            display: block;
+            height: 100%;
+            width: calc(-24px + 100%);
+            transform: translateX(24px);
+            background-color: wheat;
+        }
+
+        footer {
+            background-color: #4a8abfa4;
+            margin-top: 100px;
+            text-align: center;
+            padding:10px;
+            color:hsl(0, 0%, 19%);
+            line-height:150%;
+            clear:both;
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="side-menu">
+        <div id="side-menu-inner">
+            <h2>2022年卡塔尔世界杯</h2>
+
+            <h4>FIFA World Cup Qatar 2022</h4>
+
+            <h4>第22届国际足联世界杯，该届赛事于2022年11月20日至12月18日在卡塔尔境内8座球场举行，是历史上首次在卡塔尔和中东国家境内举行、也是第二次在亚洲举行的世界杯足球赛，卡塔尔世界杯还是首次在北半球冬季举行、首次由从未进过世界杯决赛圈的国家举办的世界杯足球赛。该届赛事有32支球队参加。</h4>
+
+            <h4>12月18日，该届世界杯闭幕式和决赛在卢塞尔体育场进行，决赛中阿根廷队通过点球大战取胜法国队，赢得大力神杯，法国队和克罗地亚队分获亚军和季军。</h4>
+
+            <h4 class="yellowgreen">阿根廷队的利昂内尔·梅西获得该届世界杯金球奖</h4>
+
+            <h4 class="yellowgreen">法国队的基利安·姆巴佩获得该届世界杯金靴奖</h4>
+
+            <h4 class="yellowgreen">阿根廷队的埃米利亚诺·马丁内斯获得该届世界杯金手套奖</h4>
+
+            <h4 class="yellowgreen">阿根廷队的恩佐·费尔南德斯该届世界杯最佳年轻球员奖</h4>
+
+        </div>
+    </div>
+
+    <header>
+
+    <ul>
+        <li><a href="https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022">  世界杯官网  </a></li>
+        <li><a href="https://baike.baidu.com/item/%E5%9B%BD%E9%99%85%E8%B6%B3%E8%81%94%E4%B8%96%E7%95%8C%E6%9D%AF/7872861?fromtitle=%E4%B8%96%E7%95%8C%E6%9D%AF&fromid=114085&fr=aladdin">  关于世界杯  </a></li>
+        <li><a href="https://www.24zbw.com/playback/shijiebei/">  赛事直播回放  </a></li>
+        <li><a href="https://www.bilibili.com/">  了解更多  </a></li>
+        <li><a href="index.html">  返回主页  </a></li>
+    </ul>
+
+    <img src="阿根廷夺冠.png" width="100%" height="800pc">
+
+    </header>
+
+    <div class="left">
+        <img src="卡塔尔.webp" width="220" height="370">
+    </div>
+
+    <table class="t1 right">
+        <tr>
+            <th>分组</th>
+            <th>队伍1</th>
+            <th>队伍2</th>
+            <th>队伍3</th>
+            <th>队伍4</th>
+        </tr>
+        <tr>
+            <th>A组</th>
+            <th>卡塔尔</th>
+            <th>厄瓜多尔</th>
+            <th>塞内加尔（16强）</th>
+            <th>荷兰（8强）</th>
+        </tr>
+        <tr>
+            <th>B组</th>
+            <th>英格兰（8强）</th>
+            <th>伊朗</th>
+            <th>美国（16强）</th>
+            <th>威尔士</th>
+        </tr>
+        <tr>
+            <th>C组</th>
+            <th class="gold">阿根廷（冠军）</th>
+            <th>沙特阿拉伯</th>
+            <th>墨西哥</th>
+            <th>波兰（16强）</th>
+        </tr>
+        <tr>
+            <th>D组</th>
+            <th class="silver">法国（亚军）</th>
+            <th>澳大利亚（16强）</th>
+            <th>丹麦</th>
+            <th>突尼斯</th>
+        </tr>
+        <tr>
+            <th>E组</th>
+            <th>西班牙（16强）</th>
+            <th>哥斯达黎加</th>
+            <th>德国</th>
+            <th>日本（16强）</th>
+        </tr>
+        <tr>
+            <th>F组</th>
+            <th>比利时</th>
+            <th>加拿大</th>
+            <th>摩洛哥（4强）</th>
+            <th class="coppery">克罗地亚（季军）</th>
+        </tr>
+        <tr>
+            <th>G组</th>
+            <th>巴西（8强）</th>
+            <th>塞尔维亚</th>
+            <th>瑞士（16强）</th>
+            <th>喀麦隆</th>
+        </tr>
+        <tr>
+            <th>H组</th>
+            <th>葡萄牙（8强）</th>
+            <th>加纳</th>
+            <th>乌拉圭</th>
+            <th>韩国（16强）</th>
+        </tr>
+    </table>
+
+    <div class="happy">
+        <div class="love">
+            <img src="多哈海湾球场.png" alt="" height="240">
+        </div>
+        <div class="you">
+            <h2 class="red">多哈海湾球场</h2>
+            <h4>别名：巴伊特体育场、艾尔·巴伊特体育场、阿尔贝特体育场</h4>
+            <h4>容量：68,895</h4>
+        </div>
+    </div>
+
+    <div class="happy">
+        <div class="love">
+            <img src="卢塞尔体育场.jfif" alt="" height="240">
+        </div>
+        <div class="you">
+            <h2 class="red">卢塞尔体育场</h2>
+            <h4>容量：88,966</h4>
+        </div>
+    </div>
+
+    <div class="happy">
+        <div class="love">
+            <img src="艾哈迈德·本·阿里球场.jfif" alt="" height="240">
+        </div>
+        <div class="you">
+            <h2 class="red">艾哈迈德·本·阿里球场</h2>
+            <h4>容量：45,032</h4>
+        </div>
+    </div>
+
+    <div class="happy">
+        <div class="love">
+            <img src="贾努布球场.jfif" alt="" height="240">
+        </div>
+        <div class="you">
+            <h2 class="red">贾努布球场</h2>
+            <h4>容量：44,325</h4>
+        </div>
+    </div>
+
+    <div class="happy">
+        <div class="love">
+            <img src="阿图玛玛球场.jfif" alt="" height="240">
+        </div>
+        <div class="you">
+            <h2 class="red">阿图玛玛球场</h2>
+            <h4>容量：44,400</h4>
+        </div>
+    </div>
+
+    <div class="happy">
+        <div class="love">
+            <img src="教育城体育场.jfif" alt="" height="240">
+        </div>
+        <div class="you">
+            <h2 class="red">教育城体育场</h2>
+            <h4>容量：44,667</h4>
+        </div>
+    </div>
+
+    <div class="happy">
+        <div class="love">
+            <img src="哈里发国际体育场.jfif" alt="" height="240">
+        </div>
+        <div class="you">
+            <h2 class="red">哈里发国际体育场</h2>
+            <h4>容量：45,857</h4>
+        </div>
+    </div>
+
+    <div class="happy">
+        <div class="love">
+            <img src="974球场.jfif" alt="" height="240">
+        </div>
+        <div class="you">
+            <h2 class="red">974球场</h2>
+            <h4>别名：拉斯阿布阿巴迪球场</h4>
+            <h4>容量：44,089</h4>
+        </div>
+    </div>
+
+    <div class="po1">
+        <table>
+        <td class="ph1"><img src="梅西.webp" alt="利昂内尔·安德烈斯·梅西·库西蒂尼">
+        <div class="pi">梅西</div></td>
+        <td class="ph1"><a target="_blank">
+            <img src="姆巴佩.webp" alt="基利安·桑米·姆巴佩·洛坦" >
+        </a>
+        <div class="pi">姆巴佩</div></td>
+        </table>
+    </div>
+    <ul class="in1">
+        <li>|| 利昂内尔·梅西，1987年6月24日出生于阿根廷圣菲省罗萨里奥，阿根廷职业足球运动员，司职前锋。<br>2022年，梅西帮助阿根廷国家队夺得世界杯冠军和欧美杯冠军，个人再度荣膺世界杯金球奖。<br>凭借这次夺杯,梅西也成功坐上了“球王”的宝座,成为贝利和马拉多纳之后的第三位球王。</li></br>
+        <li>|| 基利安·姆巴佩，1998年12月20日出生于法国塞纳-圣但尼省邦迪，法国职业足球运动员，司职前锋。<br>姆巴佩于2018年代表法国国家队征战2018年俄罗斯世界杯并随队夺冠，个人荣膺世界杯最佳新秀奖，并入选国际足联年度最佳阵容。<br>2022年，姆巴佩随法国国家队征战2022年卡塔尔世界杯，随队获得亚军，并荣膺世界杯金靴奖、银球奖。</li>
+    </ul>
+    <div class="po2">
+        <table>
+        <a target="_blank">
+        <td class="ph1"><img src="C罗.webp" alt="克里斯蒂亚诺·罗纳尔多·多斯·桑托斯·阿韦罗" ></a>
+        <div class="pi">C罗</div></td>
+        <a target="_blank">
+        <td class="ph1"><img src="内马尔.webp" alt="内马尔·达·席尔瓦·桑托斯·儒尼奥尔">
+        </a>
+        <div>内马尔</div></td>
+        </table>
+    </div>
+    <ul class="in1">
+        <li>|| 克里斯蒂亚诺·罗纳尔多，1985年2月5日出生于葡萄牙马德拉岛丰沙尔，葡萄牙职业足球运动员，司职边锋/中锋。<br></li></br>
+        <li>|| 内马尔·达·席尔瓦·桑托斯·儒尼奥尔，1992年2月5日出生于巴西圣保罗州，巴西足球运动员，司职前锋。<br>2010年，内马尔首次入选巴西国家队。2013年夏天，内马尔随国家队夺得联合会杯冠军。<br>2014年，内马尔随国家队征战巴西世界杯，并荣膺铜靴奖。2016年，内马尔帮助巴西队首夺奥运男足金牌。</li>
+    </ul>
+
+    <footer>
+        <h4>人生当中成功只是一时，失败却是主旋律，但是如何面对失败，却把人分成了不同的样子，有的人会被失败击倒，有的人会爬起来继续向前。</h4>
+        <h4>我想真正的成熟应该不是追求完美，而是直面自己的缺憾，这才是生活的本质。罗曼罗兰曾说过：“这个世界上只有一种真正的英雄主义，那就是认清生活的真相并且仍然热爱它。”</h4>
+    </footer>
+
+</body>
+</html>

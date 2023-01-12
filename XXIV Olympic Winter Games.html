@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>冬奥瞬间</title>
+    <link rel="icon" href="北京冬奥会.png">
+
+    <style>
+
+        body {
+            background-color: azure;
+            margin: 0;
+            padding: auto;
+        }
+
+        h1 {
+            font-size: 80px;
+            color:rgb(10, 140, 246);
+            text-shadow: 6px 6px rgb(227, 221, 209);
+            text-align: center;
+        }
+
+        tr:nth-child(2n+1) {
+            background-color: rgba(8, 239, 251, 0.555);
+        }
+
+        tr:nth-child(2n) {
+            background-color: rgb(97, 151, 251);
+        }
+
+
+        table {
+            margin: auto;
+            border-collapse: collapse;
+            width: 40%;
+        }
+
+        .happy {
+            width: 800px;
+            margin: 10px auto;
+            border: solid 1px gray;
+            overflow: hidden;
+        }
+
+        .love {
+            width: 300px;
+            float: left;
+        }
+
+        .love img {
+            display: block;
+            width: 100%;
+        }
+
+        .you {
+            float: right;
+            width: 450px;
+        }
+
+        .hello {
+            width: 300px;
+            float: right;
+        }
+
+        .hello img {
+            display: block;
+            width: 100%;
+        }
+
+        .me {
+            float: left;
+            width: 450px;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .gold {
+            color: gold;
+        }
+
+        .silver {
+            color: silver;
+        }
+
+        .coppery {
+            color: burlywood;
+        }
+
+        .blue {
+            color: skyblue;
+        }
+
+        .pink {
+            color: pink;
+        }
+
+        h5 {
+            font-weight: 600;
+            font-family: "楷体","楷体_GB2312";
+        }
+
+        h4 {
+            font-weight: 600;
+            font-family: "楷体","楷体_GB2312";
+        }
+
+        #side-menu {
+            background-color: lightgrey;
+            display: block;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            bottom: 0px;
+            width: 250px;
+            transition: transform 200ms ease-in;
+            transform: translateX(calc(-100% + 24px));
+        }
+ 
+        #side-menu:hover {
+            transform: translateX(0px);
+        }
+ 
+        #side-menu-inner {
+            display: block;
+            height: 100%;
+            width: calc(100% - 24px);
+            background-color: skyblue;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html"><img src="冬奥.png" width="100%" height="300pc"></a>
+    </header>
+
+    <main>
+
+        <div class="happy">
+            <div class="love">
+                <img src="开幕式.jfif" alt="" height="240">
+            </div>
+            <div class="you">
+                <h2 class="red">开幕式</h2>
+                <h5>2022年北京冬季奥运会开幕式于2022年2月4日在中华人民共和国国家体育场举行。中共中央总书记、中华人民共和国国家主席、中央军委主席习近平出席开幕式并宣布2022年北京冬季奥运会开幕。</h5>
+                <h5>2022年北京冬季奥运会开幕式以“构建人类命运共同体”为核心表达，以“简约、安全、精彩”为创作原则，立足于从全世界的角度展望美好未来。主要环节有：升中国国旗和奏唱中国国歌、运动员入场式、点燃主火炬等。</h5>
+            </div>
+        </div>
+
+        <div class="happy">
+            <div class="hello">
+                <img src="闭幕式.webp" alt="" height="225">
+            </div>
+            <div class="me">
+                <h2 class="red">闭幕式</h2>
+                <h5>2022年北京冬季奥运会闭幕式以“构建人类命运共同体”为核心表达，以“简约、安全、精彩”为创作原则，立足于从全世界的角度展望美好未来。张艺谋担任2022年北京冬季奥运会闭幕式总导演。高亭宇和徐梦桃当选北京冬奥会闭幕式中国代表团旗手。</h5>
+                <h5>2022年2月20日晚，第二十四届冬季奥林匹克运动会闭幕式在国家体育场举行。中共中央总书记、国家主席、中央军委主席习近平出席闭幕式。</h5>
+            </div>
+        </div>
+
+        <div class="happy">
+            <div class="love">
+                <img src="谷爱凌.jfif" alt="" height="225">
+            </div>
+            <div class="you">
+                <h2 class="gold">谷爱凌</h2>
+                <h5>谷爱凌（Gu Ailing Eileen），2003年9月3日出生于美国加利福尼亚州圣弗朗西斯科，昵称“青蛙公主”，中国女子自由式滑雪运动员，是国际雪联第一位自由式滑雪女子U型场地大满贯，也是中国首位在世界极限运动会夺金的运动员。</h5>
+                <h5>在2022年北京冬奥会中，谷爱凌获得自由式滑雪女子大跳台和自由式滑雪女子U型场地2枚金牌，1枚自由式滑雪坡面障碍技巧银牌的成绩。</h5>
+            </div>
+        </div>
+
+        <div class="happy">
+            <div class="hello">
+                <img src="苏翊鸣.jfif" alt="">
+            </div>
+            <div class="me">
+                <h2 class="gold">苏翊鸣</h2>
+                <h5>苏翊鸣（Yiming Su），2004年2月18日出生于吉林省吉林市，中国单板滑雪运动员。</h5>
+                <h5>2022年，苏翊鸣在北京冬奥会上夺得单板滑雪男子坡面障碍技巧银牌以及大跳台金牌，成为中国首个单板滑雪冬奥冠军。</h5>
+            </div>
+        </div>
+
+        <div class="happy">
+            <div class="love">
+                <img src="徐梦桃.webp" alt="" height="205">
+            </div>
+            <div class="you">
+                <h2 class="gold">徐梦桃</h2>
+                <h5>徐梦桃，1990年7月12日出生于辽宁省鞍山市，中国自由式滑雪空中技巧女队队员。</h5>
+                <h5>2022年2月10日，获2022年北京冬奥会自由式滑雪空中技巧混合团体项目银牌。2月14日晚，获得2022年北京冬奥会自由式滑雪女子空中技巧金牌。2月20日，当选北京冬奥会闭幕式中国代表团旗手。</h5>
+            </div>
+        </div>
+
+        <div class="happy">
+            <div class="hello">
+                <img src="任子威.jfif" alt="">
+            </div>
+            <div class="me">
+                <h2 class="gold">任子威</h2>
+                <h5>任子威，1997年6月3日出生于黑龙江省哈尔滨市，中国短道速滑运动员。</h5>
+                <h5>2022年2月7日，任子威以1分26秒768获得北京冬奥会短道速滑男子1000米冠军，实现了中国队在该项目上冬奥金牌零的突破。</h5>
+            </div>
+        </div>
+
+        <div class="happy">
+            <div class="love">
+                <img src="高亭宇.webp" alt="" height="205">
+            </div>
+            <div class="you">
+                <h2 class="gold">高亭宇</h2>
+                <h5>高亭宇，1997年12月15日出生于黑龙江省伊春市南岔县，中国速度滑冰运动员。</h5>
+                <h5>2022年，高亭宇担任北京冬季奥运会中国体育代表团旗手，个人还在北京冬奥会速度滑冰男子500米上滑出34秒32，打破奥运纪录的同时也赢得中国历史上首枚冬奥会男子速度滑冰金牌。</h5>
+            </div>
+        </div>
+
+        <div class="happy">
+            <div class="hello">
+                <img src="隋文静&韩聪.webp" alt="" height="225">
+            </div>
+            <div class="me">
+                <h2 class="gold">隋文静&韩聪</h2>
+                <h5>隋文静（Sui Wenjing），1995年7月18日出生于中国黑龙江省哈尔滨市，中国花样滑冰双人滑女运动员。</h5>
+                <h5>韩聪（Han Cong），1992年8月6日出生于中国黑龙江省哈尔滨市，中国花样滑冰双人滑男运动员。</h5>
+                <h5>2022年2月19日，韩聪、隋文静获得北京冬奥会花样滑冰自由滑金牌。</h5>
+            </div>
+        </div>
+
+        <div class="happy">
+            <div class="love">
+                <img src="齐广璞.webp" alt="">
+            </div>
+            <div class="you">
+                <h2 class="gold">齐广璞</h2>
+                <h5>齐广璞，1990年10月20日出生于江苏省徐州市沛县，中国自由式滑雪空中技巧运动员，效力中国自由式滑雪空中技巧国家队。</h5>
+                <h5>2022年2月16日，获得2022年北京冬奥会自由式滑雪男子空中技巧金牌。</h5>
+            </div>
+        </div>
+
+        <div class="happy">
+            <div class="hello">
+                <img src="李文龙.webp" alt="">
+            </div>
+            <div class="me">
+                <h2 class="silver">李文龙</h2>
+                <h5>李文龙，男，2001年2月4日出生于辽宁省抚顺市，中国短道速滑队、青岛短道速滑队运动员。</h5>
+                <h5>2022年2月7日，在2022年北京冬季奥运会短道速滑男子1000米决赛中以1:29.917的成绩获得银牌。</h5>
+            </div>
+        </div>
+
+        <div class="happy">
+            <div class="love">
+                <img src="闫文港.webp" alt="">
+            </div>
+            <div class="you">
+                <h2 class="coppery">闫文港</h2>
+                <h5>闫文港，男， 1997年7月1日出生于天津，中国钢架雪车运动员。</h5>
+                <h5>2022年2月11日，在北京冬奥会男子钢架雪车比赛上，闫文港以四轮4分01秒77的成绩摘得铜牌，这是中国选手在冬奥会历史上获得的首枚钢架雪车奖牌。</h5>
+            </div>
+        </div>
+
+        <div class="happy">
+            <div class="hello">
+                <img src="羽生结弦.webp" alt="" height="225">
+            </div>
+            <div class="me">
+                <h2 class="pink">羽生结弦</h2>
+                <h5>羽生结弦，1994年12月7日出生于日本宫城县仙台市，日本花样滑冰男子单人滑运动员。</h5>
+                <h5>2022年2月8日，在2022年北京冬季奥运会花样滑冰男子单人滑短节目比赛中，最终获得95.15分，以第八名的成绩晋级决赛；2月10日，在2022年北京冬奥会花样滑冰男子单人滑比赛中，羽生结弦未能在正式比赛中呈现完整的阿克塞尔四周（4A）跳跃，以总分283.21分获得第四名。</h5>
+            </div>
+        </div>
+
+        <div class="happy">
+            <div class="love">
+                <img src="冰墩墩雪容融.jfif" alt="" height="225">
+            </div>
+            <div class="you">
+                <h2>冰墩墩&雪容融</h2>
+                <h5>冰墩墩（Bing Dwen Dwen），是2022年北京冬季奥运会的吉祥物。冰墩墩将熊猫形象与富有超能量的冰晶外壳相结合，头部外壳造型取自冰雪运动头盔，装饰彩色光环，整体形象酷似航天员。</h5>
+                <h5>雪容融（Shuey Rhon Rhon），是2022年北京冬季残奥会的吉祥物，其以灯笼为原型进行设计创作，主色调为红色，头顶有如意环与外围的剪纸图案，面部带有不规则形状的雪块，身体可以向外散发光芒。</h5>
+            </div>
+        </div>
+
+        <div class="happy">
+            <div class="hello">
+                <img src="首钢滑雪大跳台.webp" alt="">
+            </div>
+            <div class="me">
+                <h2 class="blue">首钢滑雪大跳台</h2>
+                <h5>首钢滑雪大跳台（Big Air Shougang），别名“雪飞天”，位于北京市石景山区首钢老工业园区北区，是北京2022年冬奥会自由式滑雪和单板滑雪比赛的场地；由赛道、裁判塔和看台区域三部分组成，共设置坐席6700个。</h5>
+            </div>
+        </div>
+
+        <div class="happy">
+            <div class="love">
+                <img src="冰立方.webp" alt="" height="220">
+            </div>
+            <div class="you">
+                <h2 class="blue">冰立方</h2>
+                <h5>国家游泳中心（National Aquatics center），别名“水立方”、“冰立方”，位于北京市朝阳区北京奥林匹克公园内（北京市朝阳区天辰东路11号），始建于2003年12月24日，于2008年1月正式竣工，2020年11月27日，国家游泳中心冬奥会冰壶场馆改造工程通过完工验收，“水立方”变身为“冰立方”。国家游泳中心是2008年北京奥运会的精品场馆和2022年北京冬奥会的经典改造场馆，也是唯一一座由港澳台同胞、海外华侨华人捐资建设的奥运场馆。</h5>
+            </div>
+        </div>
+
+        <div class="happy">
+            <div class="hello">
+                <img src="雪游龙.webp" alt="" height="320">
+            </div>
+            <div class="me">
+                <h2 class="blue">国家雪车雪橇中心</h2>
+                <h5>国家雪车雪橇中心（National Sliding Centre），别名“雪游龙”，位于北京市延庆区西大庄科村，是北京2022年冬奥会雪车、雪橇的比赛场地。</h5>
+                <h5>国家雪车雪橇中心用地面积18.69公顷，建筑面积5.25万平方米，构筑物面积2.15万平方米，场内设施主要包括出发区、运营区、结束区和赛道等。国家雪车雪橇中心以支撑赛道并容纳制冷主管的U型槽为基础，以赛道为核心，通过相同的坡屋面将分散布置的出发区、结束区等建筑串联在一起。赛道全长1975米，赛道为长线型空间双曲面板壳结构，共由16个角度、倾斜度都不同的弯道组成，其中第11个弯道为全球独具特色的360度回旋弯道。</h5>
+                <h5>国家雪车雪橇中心是中国国内第一条、也是唯一一条符合冬奥会标准的雪车雪橇赛道。</h5>
+            </div>
+        </div>
+
+        <div class="happy">
+            <div class="love">
+                <img src="冰丝带.webp" alt="" height="240">
+            </div>
+            <div class="you">
+                <h2 class="blue">国家速滑馆</h2>
+                <h5>国家速滑馆（National Speed Skating Oval）又称为“冰丝带”，位于北京市朝阳区近奥林匹克公园林萃路2号，是2022年北京冬奥会北京主赛区标志性场馆、唯一新建的冰上竞赛场馆。</h5>
+                <h5>冰丝带”的设计理念来自一个冰和速度结合的创意，22条丝带就像运动员滑过的痕迹，象征速度和激情。国家速滑馆将作为北京冬奥会大道速滑比赛场地。拥有亚洲最大的全冰面设计，冰面面积达1.2万平方米。平时可接待超过2000人同时开展冰球、速度滑冰、花样滑冰、冰壶等所有冰上运动。</h5>
+                <h5></h5>
+            </div>
+        </div>
+        
+        <div class="happy">
+            <div class="hello">
+                <img src="鸟巢.jfif" alt="" height="225">
+            </div>
+            <div class="me">
+                <h2 class="blue">国家体育场</h2>
+                <h5>国家体育场（鸟巢），位于北京奥林匹克公园中心区南部，为2008年北京奥运会的主体育场，占地20.4万平米，建筑面积25.8万平方米，可容纳观众9.1万人。举行了奥运会、残奥会开闭幕式、田径比赛及足球比赛决赛。奥运会后成为北京市民参与体育活动及享受体育娱乐的大型专业场所，并成为地标性的体育建筑和奥运遗产。</h5>
+                <h5>2022年2月，成为2022年北京冬季奥运会开幕式、闭幕式举办地。</h5>
+            </div>
+        </div>
+
+        <div id="side-menu">
+            <div id="side-menu-inner">
+                <h4>第24届冬季奥林匹克运动会（XXIV Olympic Winter Games），简称2022年北京冬季奥运会，是由中国举办的国际性奥林匹克赛事，于2022年2月4日开幕，2月20日闭幕。</h4>
+
+                <h4>2022年北京冬季奥运会共设7个大项，15个分项，109个小项</h4>
+
+                <h4>北京赛区承办所有的冰上项目和自由式滑雪大跳台，延庆赛区承办雪车、雪橇及高山滑雪项目，张家口赛区承办除雪车、雪橇、高山滑雪和自由式滑雪大跳台之外的所有雪上项目。</h4>
+
+                <h4 class="red">北京也就此成为全球唯一一座既举办过夏季奥运会、又举办冬奥会的“双奥之城”</h4>
+            </div>
+        </div>
+
+    </main>
+
+    <h1>冬奥奖牌榜</h1>
+
+    <table>
+        <tr>
+            <td>排名</td>
+            <td>国家/地区</td>
+            <td>金牌</td>
+            <td>银牌</td>
+            <td>铜牌</td>
+            <td>总数</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>挪威</td>
+            <td>16</td>
+            <td>8</td>
+            <td>13</td>
+            <td>37</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>德国</td>
+            <td>12</td>
+            <td>10</td>
+            <td>5</td>
+            <td>27</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>中国</td>
+            <td>9</td>
+            <td>4</td>
+            <td>2</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>美国</td>
+            <td>8</td>
+            <td>10</td>
+            <td>7</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>瑞典</td>
+            <td>8</td>
+            <td>5</td>
+            <td>5</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>荷兰</td>
+            <td>8</td>
+            <td>5</td>
+            <td>4</td>
+            <td>17</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>荷兰</td>
+            <td>7</td>
+            <td>7</td>
+            <td>4</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>瑞士</td>
+            <td>7</td>
+            <td>2</td>
+            <td>5</td>
+            <td>14</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>俄罗斯奥运队</td>
+            <td>6</td>
+            <td>12</td>
+            <td>14</td>
+            <td>32</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>法国</td>
+            <td>5</td>
+            <td>7</td>
+            <td>2</td>
+            <td>14</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>加拿大</td>
+            <td>4</td>
+            <td>8</td>
+            <td>14</td>
+            <td>26</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>日本</td>
+            <td>3</td>
+            <td>6</td>
+            <td>9</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>意大利</td>
+            <td>2</td>
+            <td>7</td>
+            <td>8</td>
+            <td>17</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>韩国</td>
+            <td>2</td>
+            <td>5</td>
+            <td>2</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>斯洛文尼亚</td>
+            <td>2</td>
+            <td>3</td>
+            <td>2</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>芬兰</td>
+            <td>2</td>
+            <td>2</td>
+            <td>4</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>新西兰</td>
+            <td>2</td>
+            <td>1</td>
+            <td>0</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td>澳大利亚</td>
+            <td>1</td>
+            <td>2</td>
+            <td>1</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td>英国</td>
+            <td>1</td>
+            <td>1</td>
+            <td>0</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>匈牙利</td>
+            <td>1</td>
+            <td>0</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>捷克</td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>斯洛伐克</td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>比利时</td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>白俄罗斯</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td>2</td>
+        </tr>
+         <tr>
+            <td>25</td>
+            <td>西班牙</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+        </tr>
+         <tr>
+            <td>25</td>
+            <td>乌克兰</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>27</td>
+            <td>波兰</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>27</td>
+            <td>拉脱维亚</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>27</td>
+            <td>爱沙尼亚</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+
+</body>
+</html>
